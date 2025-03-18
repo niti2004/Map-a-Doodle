@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7; /* Light grayish background */
+    color: #333; /* Dark gray text for readability */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #A7C6ED; /* Soft calming blue background */
+    background: linear-gradient(135deg, rgba(167, 198, 237, 1) 0%, rgba(126, 168, 204, 1) 100%); /* Muted gradient */
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.website-name {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker semi-transparent background for readability */
+    border-radius: 8px;
+}
+
+.info-box p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: #6A98C5; /* Muted light blue button */
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #5E87B3; /* Slightly darker muted blue on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .website-name {
+        font-size: 2.5rem;
+    }
+    
+    .tagline {
+        font-size: 1.5rem;
+    }
+
+    .info-box {
+        padding: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+}

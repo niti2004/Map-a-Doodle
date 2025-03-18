@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map-a-Doodle | Interactive Map</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-draw/dist/leaflet.draw.css" />
+</head>
+<body>
+    <header>
+        <h1>Map-a-Doodle</h1>
+        <p class="tagline">Doodle Your Destination!</p>
+    </header>
+
+    <div class="sidebar">
+        <!-- Search Location Section -->
+        <div class="search-container">
+            <h3>Find a Location</h3>
+            <label for="searchInput">Enter location name:</label>
+            <input type="text" id="searchInput" placeholder="Search for a location" aria-label="Search location">
+            <button id="searchBtnMap" class="btn" aria-label="Search location">Search</button>
+        </div>
+
+        <!-- Button for Finding Current Location -->
+        <button id="findMe" class="btn">Use My Current Location</button>
+
+        <!-- Back to Home Link -->
+        <a href="index.html" class="btn">Back to Home</a>
+    </div>
+
+    <!-- Map Display Container -->
+    <div id="map"></div>
+
+    <!-- Loading JavaScript libraries asynchronously -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-draw/dist/leaflet.draw.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
